@@ -12,6 +12,8 @@
 <tw-storydata name="TEST" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="ACAA5B05-FF7A-4243-AD73-3845843E668F" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@200&family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Playfair+Display&display=swap');
+
 tw-story {
 	margin: 0;
 	padding: 0;
@@ -33,7 +35,7 @@ tw-passage {
 	box-sizing: border-box;
 	padding: 2em;
   	text-align: center;
-  	font-family: 'Libre Baskerville', serif;
+  	font-family: 'Cormoant Garamond', serif;
 	font-size: 1em;
   	color: black;
 	line-height: 1.6;
@@ -55,7 +57,7 @@ tw-passage {
 
 /* Container for title and description */
 .container {
-	background-color: #dbdbdb;
+	background-color: #e8dece;
 	width: 540px;
 	max-width: 100%;
 	padding: 1em;
@@ -65,10 +67,29 @@ tw-passage {
   	margin-left: auto;
 	margin-right: auto;
   	margin-bottom: 2em;
-  	font-family: 'Libre Baskerville', serif;
+  	font-family: 'Cormorant Garamont', serif;
 	font-size: 0.5em;
   	color: black;
 	line-height: 1.6;
+}
+
+.container img {
+  width: 160px;
+  height: 120px;
+  display: block;
+  margin: 1em auto;
+  border: none;
+  padding: auto;
+  box-sizing: none;
+  border-radius: 0px;
+}
+
+/* Slightly scale down image on small screens */
+@media (max-width: 640px) {
+  .container img {
+    width: 120px;
+    height: 90px;
+  }
 }
 
 tw-link {
@@ -110,7 +131,7 @@ tw-link:hover {
 	padding: 0.5em 1em;  /* ↓ reduced vertical padding */
 	box-sizing: border-box;
 	border-radius: 0;
-	font-size: 0.8em;       /* ↓ reduce slightly if needed */
+	font-size: 0.7em;       /* ↓ reduce slightly if needed */
 	overflow-wrap: break-word;
 	white-space: normal;
 }
@@ -149,7 +170,7 @@ tw-sidebar {
 	padding: 0.5em 1em;  /* ↓ reduced vertical padding */
 	box-sizing: border-box;
 	border-radius: 0;
-	font-size: 0.6em;       /* ↓ reduce slightly if needed */
+	font-size: 0.5em;       /* ↓ reduce slightly if needed */
 	overflow-wrap: break-word;
 	white-space: normal;
 	font-style: italic;
@@ -166,8 +187,8 @@ tw-sidebar {
     max-width: 540px;
   	text-align: center;
   	font-family: 'Libre Baskerville', serif;
-	font-size: 1em;
-  	color: black;
+	font-size: 0.8em;
+  	color: white;
 	line-height: 1.6;
   	margin-left: auto;
 	margin-right: auto;
@@ -211,15 +232,55 @@ tw-sidebar {
 	color: white;
 }
 
+.link-body {
+	width: 100%;
+	max-width: 540px;
+	margin-left: auto;
+	margin-right: auto;
+  	margin-bottom: 1em;
+}
+
+.link-body tw-link {
+	display: block;
+	width: 100%;
+	text-align: center;
+	background-color: #516552;
+	color: white;
+	text-decoration: none;
+	padding: 0.5em 1em;  /* ↓ reduced vertical padding */
+	box-sizing: border-box;
+	border-radius: 0;
+	font-size: 0.9em;       /* ↓ reduce slightly if needed */
+	overflow-wrap: break-word;
+	white-space: normal;
+  	font-family: 'Montserrat';
+}
+
+.link-body tw-link:hover {
+	background-color: #64826b;
+	color: white;
+}
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">$(document).on(':passagerender', function () {
     $('tw-passage').addClass('rendered');
-});</script><tw-passagedata pid="1" name="TITLE SCREEN" tags="" position="800,325" size="100,100">&lt;img src=&quot;https://i.imgur.com/qqTBZdP.gif&quot; class=&quot;title-image&quot;/&gt;&lt;div class=&quot;title-link&quot;&gt;[[shall we make today beautiful?-&gt;PRO]]&lt;/div&gt;&lt;div class=&quot;watermark&quot;&gt;Test de personalidad inspirado en los juegos del estilo CYOA. Construye paso a paso tu día ideal para obtener tu resultado. 
-© 2025 MONARCHBEE 🐝&lt;/div&gt;</tw-passagedata><tw-passagedata pid="2" name="ZERO" tags="" position="1000,225" size="100,100">&lt;div class=&quot;container&quot;&gt;Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of &quot;de Finibus Bonorum et Malorum&quot; (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, &quot;Lorem ipsum dolor sit amet..&quot;, comes from a line in section 1.10.32.&lt;/div&gt; &lt;div class=&quot;link-wrapper&quot;&gt;[[Start-&gt;ZERO]]&lt;/div&gt;&lt;div class=&quot;link-wrapper&quot;&gt;[[Start-&gt;ZERO]]&lt;/div&gt; </tw-passagedata><tw-passagedata pid="3" name="PRO" tags="" position="850,450" size="100,100">&lt;div class=&quot;bodytext&quot;&gt;Para comenzar, por favor elige tus pronombres.
-‎ &lt;div&gt;&lt;div class=&quot;link-wrapper&quot;&gt;[[Masculinos.-&gt;MASC]]&lt;/div&gt;&lt;div class=&quot;link-wrapper&quot;&gt;[[Femeninos.-&gt;FEM]]&lt;/div&gt;&lt;div class=&quot;small-button&quot;&gt;[[VOLVER-&gt;TITLE SCREEN]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="MASC" tags="" position="375,450" size="100,100">🤨
+});</script><tw-passagedata pid="1" name="TITLE SCREEN" tags="" position="800,325" size="100,100">&lt;img src=&quot;https://i.imgur.com/BO8QD94.png&quot; class=&quot;title-image&quot;/&gt;&lt;div class=&quot;title-link&quot;&gt;[[shall we make today beautiful?-&gt;PRO]]&lt;/div&gt;&lt;div class=&quot;watermark&quot;&gt;© 2025 MONARCHBEE 🐝&lt;/div&gt;</tw-passagedata><tw-passagedata pid="2" name="PRO" tags="" position="800,450" size="100,100">&lt;div class=&quot;bodytext&quot;&gt;  
+Para comenzar, por favor elige tus pronombres.
+‎ &lt;/div&gt;&lt;div class=&quot;link-wrapper&quot;&gt;[[Masculinos.-&gt;MASC]]&lt;/div&gt;&lt;div class=&quot;link-wrapper&quot;&gt;[[Femeninos.-&gt;FEM]]&lt;/div&gt;&lt;div class=&quot;small-button&quot;&gt;[[VOLVER-&gt;TITLE SCREEN]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name="MASC" tags="" position="375,450" size="100,100">🤨
 ‎ 
-&lt;div class=&quot;small-button&quot;&gt;[[VOLVER-&gt;PRO]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="FEM" tags="" position="975,450" size="100,100">😊
+&lt;div class=&quot;small-button&quot;&gt;[[VOLVER-&gt;PRO]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="FEM" tags="" position="800,575" size="100,100">&lt;div class=&quot;container&quot;&gt;
+00.
+&lt;img src=&quot;https://i.imgur.com/1Pz8Gv9.png&quot;&gt;
+¡Bienvenida a un nuevo día! ¿Dormiste bien? Espero que sí, porque ya es hora de levantarse. Te tomas tu debido tiempo para espabilarte: estiras los brazos, te frotas los ojos con suavidad, y dejas que estos se acostumbren a la luz de la mañana. Estás a punto de saltar de la cama cuando... ¿y esto? 
+
+Notas que alguien ha dejado un sobre al borde del colchón.
 ‎ 
-&lt;div class=&quot;small-button&quot;&gt;[[VOLVER-&gt;PRO]]&lt;/div&gt;</tw-passagedata></tw-storydata>
+&lt;div class=&quot;link-body&quot;&gt;[[¡Qué emocionante! Tomas el sobre y lo abres de inmediato. La curiosidad te puede.-&gt;STRONG]]&lt;/div&gt;&lt;div class=&quot;link-body&quot;&gt;[[Qué raro. Te quedas mirándolo un rato, dudando si deberías siquiera tocarlo. Al final decides que sí, pero procedes con cautela.-&gt;WEAK]]&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;small-button&quot;&gt;[[VOLVER-&gt;PRO]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="STRONG" tags="" position="675,650" size="100,100">&lt;div class=&quot;container&quot;&gt;
+01.
+&lt;img src=&quot;https://i.imgur.com/eBhxHLt.png&quot;&gt;
+¡Bienvenida a un nuevo día! ¿Dormiste bien? Espero que sí, porque ya es hora de levantarse. Te tomas tu debido tiempo para espabilarte: estiras los brazos, te frotas los ojos con suavidad, y dejas que estos se acostumbren a la luz de la mañana. Estás a punto de saltar de la cama cuando... ¿eh? 
+
+Notas que alguien ha dejado un sobre al borde del, colchón.
+‎ 
+&lt;/div&gt;&lt;div class=&quot;link-wrapper&quot;&gt;[[¡Qué emocionante! Tomas el sobre y lo abres de inmediato. La curiosidad te puede.-&gt;STRONG]]&lt;/div&gt;&lt;div class=&quot;link-wrapper&quot;&gt;[[Qué raro. Te quedas mirándolo un rato, dudando si deberías siquiera tocarlo. Al final decides que sí, pero procedes con cautela.-&gt;WEAK]]&lt;/div&gt;&lt;div class=&quot;small-button&quot;&gt;[[VOLVER-&gt;PRO]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="WEAK" tags="" position="925,650" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
